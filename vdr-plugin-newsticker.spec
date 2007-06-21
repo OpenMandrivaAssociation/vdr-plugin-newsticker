@@ -2,7 +2,7 @@
 %define plugin	newsticker
 %define name	vdr-plugin-%plugin
 %define version	0.0.4
-%define rel	8
+%define rel	9
 
 Summary:	VDR plugin: Newsticker
 Name:		%name
