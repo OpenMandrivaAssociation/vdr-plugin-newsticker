@@ -13,7 +13,6 @@ License:	GPL
 URL:		http://www.wontorra.net/staticpages/index.php?page=newsticker
 Source:		vdr-%plugin-%version.tar.bz2
 Patch1:		vdr-newsticker-0.0.4-gcc4.diff
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 Requires:	wget
