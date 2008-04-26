@@ -2,7 +2,7 @@
 %define plugin	newsticker
 %define name	vdr-plugin-%plugin
 %define version	0.0.4
-%define rel	12
+%define rel	13
 
 Summary:	VDR plugin: Newsticker
 Name:		%name
@@ -14,7 +14,7 @@ URL:		http://www.wontorra.net/staticpages/index.php?page=newsticker
 Source:		vdr-%plugin-%version.tar.bz2
 Patch1:		vdr-newsticker-0.0.4-gcc4.diff
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 Requires:	wget
 BuildRequires:	dos2unix
@@ -27,6 +27,7 @@ This plugin downloads rdf news-feeds and displays them on the tv.
 dos2unix *.[ch]
 chmod 0644 README HISTORY
 %patch1 -p1 -b .extra
+%vdr_plugin_prep
 
 %vdr_plugin_params_begin %plugin
 # alternative directory for downloaded files
