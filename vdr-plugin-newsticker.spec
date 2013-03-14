@@ -2,7 +2,7 @@
 %define plugin	newsticker
 %define name	vdr-plugin-%plugin
 %define version	0.0.4
-%define rel	17
+%define rel	18
 
 Summary:	VDR plugin: Newsticker
 Name:		%name
@@ -41,12 +41,6 @@ param="-o DOWNLOAD_DIR"
 %vdr_plugin_install
 
 install -d -m755 %{buildroot}%{vdr_plugin_cfgdir}/%{plugin}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
