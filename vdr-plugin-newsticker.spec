@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Newsticker
 Name:		vdr-plugin-%plugin
 Version:	0.0.4
-Release:	19
+Release:	20
 Group:		Video
 License:	GPL
 URL:		http://www.wontorra.net/staticpages/index.php?page=newsticker
