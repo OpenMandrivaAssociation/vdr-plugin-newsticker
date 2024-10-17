@@ -6,7 +6,7 @@ Version:	0.0.4
 Release:	20
 Group:		Video
 License:	GPL
-URL:		http://www.wontorra.net/staticpages/index.php?page=newsticker
+URL:		https://www.wontorra.net/staticpages/index.php?page=newsticker
 Source:		vdr-%plugin-%{version}.tar.bz2
 Patch1:		vdr-newsticker-0.0.4-gcc4.diff
 BuildRequires:	vdr-devel >= 1.6.0
